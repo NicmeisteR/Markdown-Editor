@@ -9,6 +9,7 @@
   <title>InfoSlips Markdown CMS</title>
   <link rel="stylesheet" href="./simple.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/468c9447d4.js"></script>
   <!-- <link rel="stylesheet" href="node_modules/simplemde/dist/simplemde.min.css">
   <script src="node_modules/simplemde/dist/simplemde.min.js"></script> -->
   <script src="./simple.js"></script>
@@ -85,7 +86,12 @@
         "bold",
         "italic",
         "strikethrough",
-        "heading",
+        "|",
+        "heading-1",
+        "heading-2",
+        "heading-3",
+        "heading-bigger",
+        "heading-smaller",
         "|",
         "quote",
         "unordered-list",
@@ -95,8 +101,8 @@
         "image",
         "table",
         "|",
-        "preview",
-        "side-by-side",
+        // "preview",
+        // "side-by-side",
         "fullscreen",
         "|",
         "guide"
@@ -105,8 +111,15 @@
     });
   </script>
 
-  <input type="text" id="fileName">
-  <button onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)">Download</button>
+<div class="downloadBar">
+  <form>
+     <label>
+        <i class="fas fa-file-download downloadIcon" onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)"></i>
+     </label>
+     <input type="text" id="fileName" placeholder="File Name">
+  </form>
+ </div>
+ <!-- <button onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)">Download</button> -->
 
   <script>
        function saveTextAsFile(textToWrite, fileNameToSaveAs)

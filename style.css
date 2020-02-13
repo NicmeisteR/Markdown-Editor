@@ -32,3 +32,71 @@ body {
     font-size: 2em;
     text-align: center;
 } */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+
+body {
+    background: #3b3b3b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CodeMirror, .cm-s-paper {
+    background-color : #3b3b3b !important;
+    color: white;
+}
+
+.editor-toolbar a {
+    color: greenyellow !important;
+}
+
+.downloadBar {
+    margin: 0 auto;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    width: 100%;
+    height: 69px;
+    background: #d9dad7;
+    border-radius: 24px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    height: 38px;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    width: 1000px;
+    margin-top: 14px;
+    margin-left: 58px;
+}
+
+input:focus, input:focus-within, input:active {
+    outline: none;
+}
+
+a:hover {
+    background-color: #3b3b3b !important;
+}
+
+.downloadIcon {
+    font-size: 46px;
+    margin-top: 12px;
+    margin-left: 26px;
+    color: #00000054;
+    font-weight: bold;
+}
+
+.downloadIcon:hover {
+    font-size: 46px;
+    margin-top: 12px;
+    margin-left: 26px;
+    color: #035c00b9;
+    font-weight: bold;
+}
+
+form {
+    display: inline-flex;
+}
