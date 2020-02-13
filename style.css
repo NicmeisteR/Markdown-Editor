@@ -95,3 +95,8 @@ form {
 .editor-preview-active {
     color: black;
 }
+
+h2 {
+    color: rgba(255, 255, 255, 0.705);
+    margin-bottom: -30px;
+}

@@ -20,10 +20,12 @@
 <body>
   <textarea id="MyID" placeholder="Start typing content here:"></textarea>
 
+  <h2>Download as Markdown or HTML</h2>
   <div class="downloadBar">
     <form>
       <label>
-        <i class="fas fa-file-download downloadIcon" onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)"></i>
+        <i class="fab fa-markdown downloadIcon" onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)"></i>
+        <i class="fab fa-html5 downloadIcon" onclick="saveTextAsFile(marked(MyID.value),`${fileName.value}.html`)"></i>
       </label>
       <input type="text" id="fileName" placeholder="File Name">
     </form>

@@ -1,5 +1,5 @@
 // Most options demonstrate the non-default behavior
-var simplemde = new SimpleMDE({
+let simplemde = new SimpleMDE({
     autofocus: true,
     autosave: {
         enabled: true,
@@ -91,8 +91,8 @@ var simplemde = new SimpleMDE({
 });
 
 function saveTextAsFile(textToWrite, fileNameToSaveAs) {
-    var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-    var downloadLink = document.createElement("a");
+    let textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
+    let downloadLink = document.createElement("a");
     downloadLink.download = fileNameToSaveAs;
     downloadLink.innerHTML = "Download File";
     if (window.webkitURL != null) {
