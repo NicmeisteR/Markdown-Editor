@@ -91,3 +91,7 @@ form {
     background: #3b3b3b !important;
     color: white !important;
 }
+
+.editor-preview-active {
+    color: black;
+}

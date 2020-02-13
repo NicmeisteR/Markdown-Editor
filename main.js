@@ -28,16 +28,16 @@ var simplemde = new SimpleMDE({
         underscoresBreakWords: true,
     },
     placeholder: "Type here...",
-    previewRender: function (plainText) {
-        return customMarkdownParser(plainText); // Returns HTML from a custom parser
+    previewRender: (plainText) => {
+        return  marked(plainText); // Returns HTML from a custom parser
     },
-    previewRender: function (plainText, preview) { // Async method
-        setTimeout(function () {
-            preview.innerHTML = customMarkdownParser(plainText);
-        }, 250);
+    // previewRender: function (plainText, preview) { // Async method
+    //     setTimeout(function () {
+    //         preview.innerHTML =  marked(plainText);
+    //     }, 250);
 
-        return "Loading...";
-    },
+    //     return "Loading...";
+    // },
     promptURLs: true,
     renderingConfig: {
         singleLineBreaks: false,
@@ -81,8 +81,8 @@ var simplemde = new SimpleMDE({
         "image",
         "table",
         "|",
-        // "preview",
-        // "side-by-side",
+        "preview",
+        "side-by-side",
         "fullscreen",
         "|",
         "guide"
