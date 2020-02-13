@@ -101,3 +101,12 @@ a:hover {
 form {
     display: inline-flex;
 }
+
+.fullscreen a {
+    color: black !important;
+}
+
+.fullscreen a:hover {
+    background: #3b3b3b !important;
+    color: white !important;
+}
