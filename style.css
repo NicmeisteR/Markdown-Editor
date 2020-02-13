@@ -39,7 +39,7 @@ body {
 
 body {
     margin: 40px;
-    background: #3b3b3b;
+    background: #333333;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -48,8 +48,19 @@ body {
     color: white;
 }
 
+.editor-toolbar {
+    background-color: white;
+    opacity: 1;
+}
+
+.editor-toolbar:hover {
+    background-color: white;
+    opacity: 1;
+}
+
 .editor-toolbar a {
-    color: greenyellow !important;
+    /* color: greenyellow !important; */
+    color: black !important;
 }
 
 .downloadBar {
@@ -60,6 +71,10 @@ body {
     height: 69px;
     background: #d9dad7;
     border-radius: 24px;
+}
+
+.downloadBar:hover, .downloadBar:focus, .downloadBar:focus-within {
+    background-color: white;
 }
 
 input {
@@ -79,7 +94,9 @@ input:focus, input:focus-within, input:active {
 }
 
 a:hover {
-    background-color: #3b3b3b !important;
+    /* background-color: #3b3b3b !important; */
+    background: #3b3b3b !important;
+    color: white !important;
 }
 
 .downloadIcon {
@@ -94,7 +111,8 @@ a:hover {
     font-size: 46px;
     margin-top: 12px;
     margin-left: 26px;
-    color: #035c00b9;
+    /* color: #035c00b9; */
+    color: black;
     font-weight: bold;
 }
 
