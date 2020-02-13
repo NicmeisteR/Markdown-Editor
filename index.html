@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="InfoSlips CMS">
+	<meta property="og:description" content="InfoSlips Markdown editor.">
+	<meta property="og:image" content="https://cms.nicmeister.cloud/infoslips.jpg">
+	<meta property="og:url" content="https://cms.nicmeister.cloud/">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@InfoSlips">
+	<meta property="og:site_name" content="InfoSlips CMS">
+
+  <title>InfoSlips Markdown CMS</title>
+  <link rel="stylesheet" href="./simple.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <textarea id="MyID" placeholder="Start typing content here:"></textarea>
+
+  <h2>Download as Markdown or HTML</h2>
+  <div class="downloadBar">
+    <form>
+      <label>
+        <i class="fab fa-markdown downloadIcon" onclick="saveTextAsFile(MyID.value,`${fileName.value}.md`)"></i>
+        <i class="fab fa-html5 downloadIcon" onclick="saveTextAsFile(marked(MyID.value),`${fileName.value}.html`)"></i>
+      </label>
+      <input type="text" id="fileName" placeholder="File Name">
+    </form>
+  </div>
+
+</body>
+<script src="./marked.js"></script>
+<script src="./simple.js"></script>
+<script src="https://kit.fontawesome.com/468c9447d4.js"></script>
+<script src="./main.js"></script>
+
+</html>
